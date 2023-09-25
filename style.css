@@ -3,7 +3,6 @@ body {
 	font-family: 'Jura', sans-serif;
 	letter-spacing: 2px;
 	text-shadow: 5px 5px 10px #393025;
-	color: ghostwhite;
 	margin: 0;
 	padding: 0;
 	background-color: #ffffff;
@@ -16,14 +15,14 @@ body {
 	padding-bottom: 10px;
 	padding-left: 50px;
 	padding-right: 50px;
-	height: 50px;
+	height: auto;
 	background-color: #836549;
 	font-size: 36px;
-	color: white; 
-	align-items: center"
+	color: white;
+	align-items: start;
 }
 .right-sidebar {
-	background-color: #91806D;
+	background-color: #91806d;
 	width: 100px;
 	height: 2000px;
 	position: fixed;
@@ -42,34 +41,35 @@ body {
 	text-align: center;
 }
 .githubLink {
-	color: white;
+	color: rgb(231, 242, 11);
 	position: fixed;
 	bottom: 45%;
 	right: 10px;
-	z-index: 4;
+	z-index: 2;
 	height: 50px;
 	writing-mode: vertical-rl;
 	text-align: center;
+	text-decoration-line: underline;
+}
+.parallax1 {
+	display: flex;
+	flex-wrap: wrap;
 }
 
-.parallax1 {
-	height: 30%;
-	width: 90%;
-	background-attachment: fixed;
-	background-position: start;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-.parallax1 div {
-	display: flex;
-	justify-content: space-around;
-}
-.parallax2, .parallax3, .parallax4, .parallax5 {
+.parallax2,
+.parallax3,
+.parallax4,
+.parallax5 {
 	height: 40%;
 	background-attachment: fixed;
 	background-position: start;
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.whiteSpace {
+	width: 100px;
+	height: 100px;
 }
 img {
 	height: 500px;
@@ -77,11 +77,13 @@ img {
 .textColumn {
 	display: flex;
 	flex-direction: column;
-	
+	width: 600px;
 }
-h2, h3 {
+h2,
+h3 {
 	color: #393025;
 	text-shadow: 3px 3px 10px #78644b;
+	margin: 20px;
 }
 p {
 	margin: 0;
@@ -89,4 +91,5 @@ p {
 
 a {
 	color: rgb(231, 242, 11);
+	text-decoration: none;
 }
