@@ -7,10 +7,12 @@ body {
 	padding: 0;
 	background-color: #ffffff;
 }
+
 .header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-right: 100px;
 	padding-top: 10px;
 	padding-bottom: 10px;
 	padding-left: 50px;
@@ -53,31 +55,37 @@ body {
 }
 .parallax1 {
 	display: flex;
+	justify-content: center;
 	flex-wrap: wrap;
+	align-items: center;
 }
 
 .parallax2,
 .parallax3,
 .parallax4,
 .parallax5 {
-	height: 40%;
+	display: flex;
+	height: 60%;
 	background-attachment: fixed;
 	background-position: start;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	/* background-size: contain; */
 }
 
-.whiteSpace {
-	width: 100px;
-	height: 100px;
-}
+/* .whiteSpace {
+	width: 200px;
+	height: 10px;
+} */
 img {
 	height: 500px;
-}
+	}
 .textColumn {
 	display: flex;
 	flex-direction: column;
 	width: 600px;
+	margin-right: 100px;
 }
 h2,
 h3 {
@@ -93,3 +101,23 @@ a {
 	color: rgb(231, 242, 11);
 	text-decoration: none;
 }
+
+
+/* @media only screen and (max-width: 768px) {
+    .parallax2,
+    .parallax3,
+    .parallax4,
+    .parallax5 {
+        background-attachment: scroll; 
+        background-size: contain; 
+    }
+
+    .textColumn {
+        width: 100%; 
+    }
+
+    .profile-picture {
+        max-width: 100%; 
+        height: auto;
+    }
+} */
